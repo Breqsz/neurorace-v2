@@ -23,6 +23,7 @@
   --color-pink: #ff1f8f;
   --color-purple: #bf46f3;
   --color-gold: #ffd700;
+  --color-card: #131c26;  /* DEPRECATED alias → surface; remover quando dashboard/auth/sobre/equipe migrarem (Planos B/C) */
 
   --radius-card: 0.875rem;
 }

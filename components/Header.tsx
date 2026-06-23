@@ -67,7 +67,7 @@ export function Header() {
         <button
           type="button"
           onClick={() => setOpen(true)}
-          className="rounded-lg p-2 text-fg-strong transition-colors hover:bg-card md:hidden"
+          className="rounded-lg p-2 text-fg-strong transition-colors hover:bg-surface md:hidden"
           aria-label="Abrir menu"
         >
           <MenuIcon />
@@ -178,7 +178,7 @@ function AuthChip({
     <div className="flex items-center gap-2">
       <Link
         href="/dashboard"
-        className="flex items-center gap-2 rounded-full border border-border bg-surface/50 py-1 pl-1 pr-3 transition-colors hover:border-cyan"
+        className="flex items-center gap-2 rounded-full border border-border bg-surface/50 py-1 pl-1 pr-3 transition-colors hover:border-attention"
         title="Meu Desempenho"
       >
         <span className="grid h-7 w-7 place-items-center rounded-full bg-attention text-sm font-bold text-bg">
@@ -189,7 +189,7 @@ function AuthChip({
       <button
         type="button"
         onClick={onSignOut}
-        className="text-sm text-fg-muted transition-colors hover:text-pink"
+        className="text-sm text-fg-muted transition-colors hover:text-attention"
       >
         Sair
       </button>
