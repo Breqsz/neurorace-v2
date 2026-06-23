@@ -129,8 +129,8 @@ export function LiveSignal({
       </svg>
 
       <span
-        className="pointer-events-none absolute left-2 top-2 z-10 font-mono text-[0.58rem] uppercase tracking-[0.12em] text-fg-muted"
-        style={{ transform: `translateY(${(thresholdY / VB_H) * 100}%)` }}
+        className="pointer-events-none absolute left-2 z-10 -translate-y-full pb-0.5 font-mono text-[0.58rem] uppercase tracking-[0.12em] text-fg-muted"
+        style={{ top: `${(thresholdY / VB_H) * 100}%` }}
         aria-hidden
       >
         Zona de foco
