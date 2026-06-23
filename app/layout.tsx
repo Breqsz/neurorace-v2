@@ -1,20 +1,27 @@
 import type { Metadata } from "next";
-import { Poppins, Inter } from "next/font/google";
+import { Space_Grotesk, Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { site } from "@/lib/site";
 
-const poppins = Poppins({
+const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
-  weight: ["400", "600", "700", "800"],
-  variable: "--font-poppins",
+  weight: ["500", "600", "700"],
+  variable: "--font-space-grotesk",
   display: "swap",
 });
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
+  display: "swap",
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  weight: ["500", "700"],
+  variable: "--font-jetbrains-mono",
   display: "swap",
 });
 
@@ -33,7 +40,7 @@ export default function RootLayout({
   return (
     <html
       lang="pt-BR"
-      className={`${poppins.variable} ${inter.variable} h-full`}
+      className={`${spaceGrotesk.variable} ${inter.variable} ${jetbrainsMono.variable} h-full`}
     >
       <body className="flex min-h-full flex-col bg-bg text-fg antialiased">
         <Header />

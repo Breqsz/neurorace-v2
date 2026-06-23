@@ -17,8 +17,8 @@ export function Logo() {
         priority
       />
       <span className="font-display text-xl font-extrabold tracking-tight">
-        <span className="text-cyan">NEURO</span>
-        <span className="text-pink">RACE</span>
+        <span className="text-fg-strong">NEURO</span>
+        <span className="text-attention">RACE</span>
       </span>
     </Link>
   );
